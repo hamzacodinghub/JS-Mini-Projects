@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+.main-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: absolute;
+  top: 3.125rem;
+}
+.main-heading h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.main-heading h2 {
+  font-size: 1.875rem;
+}
+.card-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  gap: 1.875rem;
+}
+.card {
+  height: 21.875rem;
+  width: 12.5rem;
+  border: 0.0938rem solid gray;
+  border-radius: 0.625rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#pro {
+  border: 0.0938rem solid rgb(5, 93, 255);
+}
+#enterprise {
+  border: 0.0938rem solid rgb(6, 200, 200);
+}
+#basic .heading-container {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background-color: gray;
+  color: white;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 0.4375rem;
+  border-top-left-radius: 0.4375rem;
+  letter-spacing: 0.0625rem;
+}
+#pro .heading-container {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background-color: rgb(5, 93, 255);
+  color: white;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 0.4375rem;
+  border-top-left-radius: 0.4375rem;
+  letter-spacing: 0.0625rem;
+}
+#enterprise .heading-container {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background-color: rgb(6, 200, 200);
+  color: white;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 0.4375rem;
+  border-top-left-radius: 0.4375rem;
+  letter-spacing: 0.0625rem;
+}
+.card .main-content-container p {
+  text-align: center;
+}
+.card .main-content-container .price span {
+  font-size: 2.5rem;
+}
+.card ol {
+  list-style-type: none;
+}
+.card ol li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+#basic ol li::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.125rem;
+  color: gray;
+}
+#pro ol li::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.125rem;
+  color: rgb(5, 93, 255);
+}
+#enterprise ol li::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.125rem;
+  color: rgb(6, 200, 200);
+}
+.bold {
+  font-weight: 700;
+}
+.btn-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 1.25rem;
+}
+.btn {
+  margin-top: 3.125rem;
+  width: 80%;
+  padding: 0.3125rem 0.9375rem;
+  border-radius: 0.625rem;
+  color: white;
+}
+#basic .btn {
+  border: 0.0625rem solid rgb(35, 35, 35);
+  background-color: gray;
+}
+#pro .btn {
+  border: 0.0625rem solid rgb(9, 5, 255);
+  background-color: rgb(5, 93, 255);
+}
+#enterprise .btn {
+  border: 0.0625rem solid rgb(30, 133, 133);
+  background-color: rgb(6, 200, 200);
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .card-container {
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  .card {
+    width: 200px;
+    height: 250px;
+  }
+}
